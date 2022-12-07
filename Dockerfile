@@ -4,7 +4,7 @@ FROM alpine:3.9
 RUN apk add --no-cache wget ca-certificates && \
     wget -q https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     unzip rclone-current-linux-amd64.zip && \
-    mv rclone-current-linux-amd64/rclone /usr/bin && \
+    mv rclone-*-linux-amd64/rclone /usr/bin && \
     rm rclone-current-linux-amd64.zip && \
     rm -rf rclone-current-linux-amd64 && \
     apk del wget
