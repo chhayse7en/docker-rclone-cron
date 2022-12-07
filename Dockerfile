@@ -6,7 +6,7 @@ RUN apk add --no-cache wget ca-certificates && \
     unzip rclone-current-linux-amd64.zip && \
     mv rclone-*-linux-amd64/rclone /usr/bin && \
     rm rclone-current-linux-amd64.zip && \
-    rm -rf rclone-current-linux-amd64 && \
+    rm -rf rclone-*-linux-amd64 && \
     apk del wget
 
 # install entrypoint
